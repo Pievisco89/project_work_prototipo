@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  padding:0;
+  Font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:#677380
+  }
+  .form_login{
+  position:absolute;
+  width:300px;
+  padding:40px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  background:#191919;
+  
+  }
+  
+  /* .form_login h1{
+  float:left;
+  text-transform:uppercase;
+  font-weight:bold;
+  border-bottom:6px solid;
+  margin-bottom:50px;
+  padding:13px;
+  } */
+ 
+  .form_login h1{
+  color:white;
+  text-transform:uppercase;
+  font-weight:500;
+  }
+  
+  .form_login input[type="email"], .form_login input[type="password"]{
+  border:0;
+  display:block;
+  background:none;
+  margin:20px auto;
+  text-align:center;
+  border :2px solid #3498db;
+  padding: 14px 10px;
+  width:200px;
+  outline: none;
+  color: white;
+  border-radius:24px;
+  transition:0.25px;
+  
+  }
+  
+  .form_login input[type="email"]:focus, .form_login input[type="password"]:focus{
+  width:280px;
+  border-color : #2ecc71;
+  font-size: medium;
+
+  }
+  
+  .form_login input[type="submit"]{
+      border:0;
+      display:block;
+      background:none;
+      margin:20px auto;
+      text-align:center;
+      border :2px solid  #2ecc71;
+      padding: 14px 50px;
+     cursor: pointer;
+      outline: none;
+      color: white;
+      border-radius:24px;
+      transition:0.25px;
+  }
+  .form_login input[type="submit"]:hover{
+      font-size: large;
+      background-color: rgb(59, 52, 52);
+      color:azure;
+  }

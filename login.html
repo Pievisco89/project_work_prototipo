@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+  
+    <div class="logo">
+      <img src="img/logo.jpg" alt="logo">
+    </div>
+  
+      <ul class="nav-links">
+       
+        <li>
+          <a class="coloreLinkNavBar" href="index.html">Home</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="#">Chi siamo?</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="#">Contatti</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="#">Registrati</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="#" style="color: rgb(248, 95, 95);">Login</a>
+        </li>
+   
+      </ul>
+  
+      <div class="burger">
+        <div class="lin1"></div>
+        <div class="lin2"></div>
+        <div class="lin3"></div>
+      </div>
+  </nav>
+
+  <form action="login.jsp" method="post" class="form_login">
+
+    <h1>Login</h1>
+
+    <input type="email" name="email" id="email" required value="" placeholder="Example@gmail.com">
+
+    <input type="password" name="password" id="password" required value="" placeholder="Inserisci la password">
+
+    <input type="submit" value="Login">
+    <h4 style="color:rgb(165, 165, 165)">Non sei ancora iscritto che aspetti???<a style="text-decoration: none;color:whitesmoke" href="#">Iscriviti</a></h4>
+
+  </form>
+
+</body>
+</html>
