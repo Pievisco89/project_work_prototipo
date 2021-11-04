@@ -1,53 +1,26 @@
+<t></t>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrati</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/styleRegistrazione.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-  
-    <div class="logo">
-      <img src="img/logo.jpg" alt="logo">
-    </div>
-  
-      <ul class="nav-links">
-       
-        <li >
-          <a class="coloreLinkNavBar" href="index.html" >Home</a>
-        </li>
-  
-        <li>
-          <a class="coloreLinkNavBar" href="#">Chi siamo?</a>
-        </li>
-  
-        <li>
-          <a class="coloreLinkNavBar" href="#">Contatti</a>
-        </li>
-  
-        <li>
-          <a class="coloreLinkNavBar" href="#" style="color: rgb(248, 95, 95);">Registrati</a>
-        </li>
-  
-        <li>
-          <a class="coloreLinkNavBar" href="login.html">Login</a>
-        </li>
-   
-      </ul>
-  
-      <div class="burger">
-        <div class="lin1"></div>
-        <div class="lin2"></div>
-        <div class="lin3"></div>
-      </div>
-  </nav>
+    <form action="#" method="post" class="form_login">
 
-  <section class="form-container">
+        <h1>Login</h1>
+        
+    
+            <input type="text" name="nome" id="nome" placeholder="Inserisci il nome" required>
+    
+            <input type="text" name="cognome" id="cognome" placeholder="Inserisci il cognome" required>
+            
+            <div style="clear: both;"></div>
 
+<<<<<<< HEAD
     <form action="#" method="post" class="form_login">
   
       <h1>Registrati</h1>
@@ -78,7 +51,35 @@
       
     </form>
   </section>
+=======
+            <input type="text" name="codiceFiscale" id="codiceFiscale" required placeholder="Inserisci il codiceFiscale" maxlength="16" minlength="16" >
+    
+            <select class="nazionalita">
+                <option value=”Italia”>Italia</option>
+                <option value=”Francia”>Francia</option>
+                <option value=”Germania”>Germania</option>
+                <option value=”Belgio”>Belgio</option>
+                </select>
 
+            <div style="clear: both;"></div>
+    
+            <input type="email" name="email" id="email" required value="" placeholder="Example@gmail.com">
+    
+            <input type="password" name="password" id="password" required value="" placeholder="Inserisci la password">
+
+            <div style="clear: both;"></div>
+    
+            <input type="password" name="confermaPassword" id="confermaPassword" placeholder="Conferma password">
+
+            <input type="date" name="dataNascita" id="dataNascita" required>
+>>>>>>> cd90e5ea3b978143e098e2f94526f2259de4517e
+
+            <div style="clear: both;"></div>
+            
+            <input type="submit" value="Login">
+            <h4 style="color:rgb(165, 165, 165)">NSei già iscritto?<a style="text-decoration: none;color:whitesmoke" href="login.html">Accedi</a></h4>
+    
+    </form>
 </body>
 
 </html>
