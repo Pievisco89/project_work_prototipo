@@ -1,166 +1,84 @@
 body{
-    margin:0;
-    padding:0;
-    Font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background:#34495e
-    }
-    .form_login{
-    position:absolute;
-    width:400px;
+  margin:0;
+  padding:0;
+  Font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:#34495e
+  }
+  
+  .form-container{
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: red;
+  }
+
+  .form_login{
+    width:50%;
+    height: 100%;
+    margin: 0 auto;
     padding:40px;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
     text-align:center;
-    background:#191919;
-    
-    }
-    /*
-    .form_login h1{
-    float:left;
-    text-transform:uppercase;
-    font-wegth:bold;
-    border-bottom:6px solid;
-    margin-bottom:50px;
-    padding:13px;
-    }
-    */
-    .form_login h1{
-    color:white;
-    text-transform:uppercase;
-    font-weight:500;
-    }
-    
-    .form_login input[type="email"], .form_login input[type="password"],.form_login input[type="text"],
-    .form_login input[type="password"],
-    .form_login input[type="date"],.form_login input[type="number"],.nazionalita{
-        float:left;
-    border:0;
-    display:block;
-    background:none;
-    margin:20px auto;
-    text-align:center;
-    border :2px solid #3498db;
-    padding: 14px 10px;
-    width:190px;
-    outline: none;
-    color: white;
-    border-radius:24px;
-    transition:0.25px;
-    
-    }
-    .nazionalita{
-        color:rgb(116, 110, 110);
-    
-    }
-    .nazionalita:focus{
-    border-color : #2ecc71;
-    font-size: medium;
-    color:whitesmoke;
-    background: rgb(51, 50, 50);
-    }
-    
-    .form_login input[type="email"]:focus, .form_login input[type="password"]:focus,.form_login input[type="text"]:focus,.form_login input[type="password"]:focus,
-    .form_login input[type="date"]:focus,.form_login input[type="number"]:focus{
-    width:210px;
-    border-color : #2ecc71;
-    font-size: medium;
+    background:#191919;  
+  }
 
-    }
-    
-    .form_login input[type="submit"]{
-        border:0;
-        display:block;
-        background:none;
-        margin:20px auto;
-        text-align:center;
-        border :2px solid  #2ecc71;
-        padding: 14px 50px;
-       cursor: pointer;
-        outline: none;
-        color: white;
-        border-radius:24px;
-        transition:0.25px;
-    }
-    .form_login input[type="submit"]:hover{
-        font-size: large;
-        background-color: rgb(59, 52, 52);
-        color:azure;
-    }
-
-<<<<<<< HEAD
-.form_login{
-  width: 40%;
-  height: 85vh;
-  margin: 0 auto;
-  padding:40px;
-  text-align:center;
-  background:#191919;
-}
- 
-.form_login h1{
+  .form_login h1{
   color:white;
   text-transform:uppercase;
   font-weight:500;
-}
+  }
   
-.form_login input[type="email"], .form_login input[type="password"],.form_login input[type="text"],
-.form_login input[type="password"],
-.form_login input[type="date"],.form_login input[type="number"],.nazionalita{
-  float:left;
-  border:0;
-  display:block;
-  background:none;
-  margin: 18px 10px;
-  text-align:center;
-  border :2px solid #3498db;
-  padding: 14px 10px;
-  width: 45%;
-  outline: none;
-  color: white;
-  border-radius:24px;
-  transition:0.25px; 
-}
-
-.nazionalita{
-  color:rgb(116, 110, 110);
-}
+  .form_login input[type="email"], .form_login input[type="password"],.form_login input[type="text"],
+  .form_login input[type="password"],
+  .form_login input[type="date"],.form_login input[type="number"],.nazionalita{
+      float:left;
+    border:0;
+    display:block;
+    background:none;
+    margin:20px 20px;
+    text-align:center;
+    border :2px solid #3498db;
+    padding: 14px 10px;
+    width: 40%;
+    outline: none;
+    color: white;
+    border-radius:24px;
+    transition:0.25px; 
+  }
+  .nazionalita{
+      color:rgb(116, 110, 110);
   
-.nazionalita:focus{
+  }
+  .nazionalita:focus{
   border-color : #2ecc71;
   font-size: medium;
   color:whitesmoke;
   background: rgb(51, 50, 50);
-}
+  }
   
-.form_login input[type="email"]:focus, .form_login input[type="password"]:focus,.form_login input[type="text"]:focus,.form_login input[type="password"]:focus,
-.form_login input[type="date"]:focus,.form_login input[type="number"]:focus{
-  width:45%;
-  border-color : #2ecc71;
+  .form_login input[type="email"]:focus, .form_login input[type="password"]:focus,.form_login input[type="text"]:focus,.form_login input[type="password"]:focus,
+  .form_login input[type="date"]:focus,.form_login input[type="number"]:focus{
+  width: 40%;
+  border-color: #2ecc71;
   font-size: medium;
-}
+
+  }
   
-.form_login input[type="submit"]{
-  border:0;
-  display:block;
-  background:none;
-  margin:20px auto;
-  text-align:center;
-  border :2px solid #2ecc71;
-  padding: 14px 50px;
-  cursor: pointer;
-  outline: none;
-  color: white;
-  border-radius:24px;
-  transition:0.25px;
-}
-
-.form_login input[type="submit"]:hover{
-  /* font-size: large; */
-  background-color: rgb(59, 52, 52);
-  color:azure;
-}
-=======
-
-
->>>>>>> cd90e5ea3b978143e098e2f94526f2259de4517e
+  .form_login input[type="submit"]{
+      border:0;
+      display:block;
+      background:none;
+      margin:20px auto;
+      text-align:center;
+      border :2px solid  #2ecc71;
+      padding: 14px 50px;
+     cursor: pointer;
+      outline: none;
+      color: white;
+      border-radius:24px;
+      transition:0.25px;
+  }
+  .form_login input[type="submit"]:hover{
+      font-size: large;
+      background-color: rgb(59, 52, 52);
+      color:azure;
+  }
