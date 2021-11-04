@@ -4,7 +4,7 @@
     String DRIVER = "com.mysql.cj.jdbc.Driver";
     String URL = "jdbc:mysql://localhost:3306/project_work";
     String USERNAME = "root";
-    String PASSWORD = "root";
+    String PASSWORD = "";
     String user = request.getParameter("email");
     String password = request.getParameter("password");
     boolean status = false;

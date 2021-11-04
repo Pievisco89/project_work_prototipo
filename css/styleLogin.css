@@ -5,14 +5,14 @@ body{
   background:#677380
   }
   .form_login{
-  position:absolute;
-  width:300px;
-  padding:40px;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  text-align:center;
-  background:#191919;
+    position:absolute;
+    width:300px;
+    padding:40px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    background:#191919;
   
   }
   
@@ -48,7 +48,7 @@ body{
   }
   
   .form_login input[type="email"]:focus, .form_login input[type="password"]:focus{
-  width:280px;
+  width: 95%;
   border-color : #2ecc71;
   font-size: medium;
 
