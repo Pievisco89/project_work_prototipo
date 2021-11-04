@@ -1,0 +1,146 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Nav-bar */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* .logo{
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+} */
+
+nav img{
+  width: 220px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.coloreLinkNavBar{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 5px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+}
+
+
+/* Container centrale */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.banner{
+  width: 80%;
+  height: 300px;
+  background-color: rgb(149, 149, 255);
+  /* background-image: url('../img/prova.jpg');
+  background-size: cover;
+  background-position: center; */
+  margin: 15px auto;
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  height: 220px;
+  width: 80%;
+  background-color: coral;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+table tr td{
+  border: 1px solid black;
+  padding: 0 3px;
+}
+
+/* Footer */
+footer{
+  height: 95px;
+  width: 80%;
+  background-color: rgb(189, 44, 44);
+  margin: 0 auto;
+}
+
+footer li{
+  margin: 0 20px;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top:8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

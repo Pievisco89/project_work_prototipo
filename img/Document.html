@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/registrazione.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+<link rel="stylesheet" href="./Document_files/styleRegistrazione.css"><link rel="stylesheet" href="./Document_files/style.css"></head>
+<body>
+
+  <nav>
+  
+    <div class="logo">
+      <img src="./Document_files/logo.jpg" alt="logo">
+    </div>
+  
+      <ul class="nav-links">
+       
+        <li>
+          <a class="coloreLinkNavBar" href="http://127.0.0.1:5500/index.html">Home</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="http://127.0.0.1:5500/registrazione.html#">Chi siamo?</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="http://127.0.0.1:5500/registrazione.html#">Contatti</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="http://127.0.0.1:5500/registrazione.html" style="color: rgb(248, 95, 95);">Registrati</a>
+        </li>
+  
+        <li>
+          <a class="coloreLinkNavBar" href="http://127.0.0.1:5500/login.html">Login</a>
+        </li>
+   
+      </ul>
+  
+      <div class="burger">
+        <div class="lin1"></div>
+        <div class="lin2"></div>
+        <div class="lin3"></div>
+      </div>
+
+  </nav>
+
+  <section class="form-container">
+
+    <form action="http://127.0.0.1:5500/registrazione.html#" method="post" class="form_login">
+  
+      <h1>Registrati</h1>
+        
+      <div class="input-container">
+
+        <input type="text" name="nome" id="nome" placeholder="Inserisci il nome" required="" style="
+    min-width: 100px;
+">
+        <input type="text" name="cognome" id="cognome" placeholder="Inserisci il cognome" required="">
+
+      </div>
+  
+      <div class="input-container">
+
+        <input type="text" name="codiceFiscale" id="codiceFiscale" required="" placeholder="Inserisci il codiceFiscale" maxlength="16" minlength="16">
+      
+        <select class="nazionalita">
+          <option value="”Italia”">Italia</option>
+          <option value="”Francia”">Francia</option>
+          <option value="”Germania”">Germania</option>
+          <option value="”Belgio”">Belgio</option>
+        </select>
+      </div>
+    
+      <div class="input-container">
+        <input type="email" name="email" id="email" required="" value="" placeholder="Example@gmail.com">
+      
+        <input type="password" name="password" id="password" required="" value="" placeholder="Inserisci la password">
+    
+      </div>
+
+      <div class="input-container">
+        <input type="password" name="confermaPassword" id="confermaPassword" placeholder="Conferma password">
+    
+        <input type="date" name="dataNascita" id="dataNascita" required="">
+      </div>
+            
+      <input type="submit" value="Login">
+      <h4 style="color:rgb(165, 165, 165)">Sei già iscritto?<a style="text-decoration: none;color:whitesmoke" href="http://127.0.0.1:5500/login.html">Accedi</a></h4>
+    
+    </form>
+
+  </section>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
